@@ -3,6 +3,7 @@ const cors = require("cors")
 const bodyParser = require("body-parser")
 const morgan = require("morgan")
 const user = require("../route/user")
+const patrol = require("../route/patrol")
 
 const app = express()
 
@@ -12,6 +13,7 @@ app.use(log)
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(user)
+app.use("/patrol",patrol)
 app.get("/", (req, res)=>{
     res.json({
         error: false,

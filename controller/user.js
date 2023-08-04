@@ -6,7 +6,7 @@ class User {
             data: {
                 token: uid.v4(),
                 user: {
-                    name: "Budi santoro",
+                    nama_lengkap: "Budi santoro",
                     email: "budi@gmail.com",
                     nrp: "0543536543216"
                 }

@@ -2,27 +2,29 @@ const express = require('express')
 const cors = require("cors")
 const bodyParser = require("body-parser")
 const morgan = require("morgan")
+const user = require("../route/user")
 
-const index = express()
+const app = express()
 
 const log = morgan('tiny')
-index.use(cors())
-index.use(log)
-index.use(bodyParser.urlencoded({extended: true}))
-index.use(bodyParser.json())
-index.get("/", (req, res)=>{
+app.use(cors())
+app.use(log)
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json())
+app.use(user)
+app.get("/", (req, res)=>{
     res.json({
         error: false,
         message: "Server online"
     })
 })
-index.use("/*", (req, res) => {
+app.use("/*", (req, res) => {
     res.status(404).json({
         error: true,
         message: "Not Found"
     })
 })
 
-index.listen(80, 'localhost', () => {
+app.listen(80, 'localhost', () => {
     console.log("Server started")
 })

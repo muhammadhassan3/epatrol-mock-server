@@ -4,7 +4,7 @@ class Patrol {
     static async getAll(req, res) {
         const data = []
         let i = 0
-        for (i = 0; i < 3; i += 3) {
+        for (i = 0; i < 6; i += 3) {
             data.push({
                 status: "belum-dikerjakan",
                 alamat: "Jl Diponegoro 1",

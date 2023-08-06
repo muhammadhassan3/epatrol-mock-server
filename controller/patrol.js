@@ -12,6 +12,7 @@ class Patrol {
                 ketua: "budi@gmail.com",
                 verified: false,
                 judul: `Patroli Rutin ${i}`,
+                plate: "R 1234 CH",
                 id: i
             })
             data.push({
@@ -22,6 +23,7 @@ class Patrol {
                 ketua: "ahmad@gmail.com",
                 verified: false,
                 judul: `Patroli Rutin ${i}`,
+                plate: "R 5678 CH",
                 id: i+1
             })
             data.push({
@@ -32,6 +34,7 @@ class Patrol {
                 ketua: "ahmad@gmail.com",
                 verified: true,
                 judul: `Patroli Rutin ${i + 1}`,
+                plate: "R 9031 CH",
                 id: i + 2
             })
             data.push({
@@ -42,6 +45,7 @@ class Patrol {
                 ketua: "ahmad@gmail.com",
                 verified: true,
                 judul: `Patroli Rutin ${i + 1}`,
+                plate: "R 7777 CH",
                 id: i + 3
             })
         }

@@ -1,10 +1,9 @@
-const uuid = require("uuid")
 
 class Patrol {
     static async getAll(req, res) {
         const data = []
-        let i = 0
-        for (i = 0; i < 6; i += 3) {
+        let i
+        for (i = 0; i < 10; i += 4) {
             data.push({
                 status: "belum-dikerjakan",
                 alamat: "Jl Diponegoro 1",
@@ -16,6 +15,16 @@ class Patrol {
                 id: i
             })
             data.push({
+                status: "belum-dikerjakan",
+                alamat: "Jl Diponegoro 1",
+                tanggal: "22 Juni 2023",
+                jam: "22:24",
+                ketua: "ahmad@gmail.com",
+                verified: false,
+                judul: `Patroli Rutin ${i}`,
+                id: i+1
+            })
+            data.push({
                 status: "sudah-dikerjakan",
                 alamat: "Jl Diponegoro 2",
                 tanggal: "22 Juni 2023",
@@ -23,7 +32,7 @@ class Patrol {
                 ketua: "ahmad@gmail.com",
                 verified: true,
                 judul: `Patroli Rutin ${i + 1}`,
-                id: i + 1
+                id: i + 2
             })
             data.push({
                 status: "sedang-dikerjakan",
@@ -33,7 +42,7 @@ class Patrol {
                 ketua: "ahmad@gmail.com",
                 verified: true,
                 judul: `Patroli Rutin ${i + 1}`,
-                id: i + 2
+                id: i + 3
             })
         }
         res.json({

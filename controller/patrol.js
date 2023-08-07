@@ -53,6 +53,13 @@ class Patrol {
             error: false, message: "Data berhasil dimuat", data: data
         })
     }
+
+    static async verify(req, res){
+        res.json({
+            error: false,
+            message: "Tugas terverifikasi"
+        })
+    }
 }
 
 module.exports = Patrol

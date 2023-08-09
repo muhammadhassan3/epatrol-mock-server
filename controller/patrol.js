@@ -76,7 +76,16 @@ class Patrol {
                 tujuan: "Patroli antisipasi tindak kriminal tahun 2023 yang menyasar kenakalan remaja, tindak kriminal ringan dan pemantauan keamanan",
                 id: 0,
                 events:[
-
+                    {
+                        id: 0,
+                        image: "",
+                        summary: "Sambang dengan warga sekitar untuk memastikan situasi dan kondisi aman",
+                        title: "Suasana tertib",
+                        action: "Dialog dengan warga",
+                        lat: 0.0,
+                        long: 0.0,
+                        createdAt :"22 Janurai 2023 14:40"
+                    }
                 ]
             }
         })

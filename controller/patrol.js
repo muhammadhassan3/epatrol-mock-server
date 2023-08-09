@@ -60,6 +60,27 @@ class Patrol {
             message: "Tugas terverifikasi"
         })
     }
+
+    static async detail(req, res){
+        res.json({
+            error: false,
+            message: "Data berhasil dimuat",
+            data: {
+                status: "belum-dikerjakan",
+                alamat: "Jl Diponegoro 1",
+                tanggal: "22 Juni 2023",
+                jam: "22:24",
+                lead: "budi@gmail.com",
+                title: `Patroli Rutin 0`,
+                sprin: "Sprin/130/I/PAM.5.1.3/2023",
+                tujuan: "Patroli antisipasi tindak kriminal tahun 2023 yang menyasar kenakalan remaja, tindak kriminal ringan dan pemantauan keamanan",
+                id: 0,
+                events:[
+
+                ]
+            }
+        })
+    }
 }
 
 module.exports = Patrol

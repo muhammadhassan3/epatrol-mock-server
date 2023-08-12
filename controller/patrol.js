@@ -84,10 +84,18 @@ class Patrol {
                         action: "Dialog dengan warga",
                         lat: 0.0,
                         long: 0.0,
-                        createdAt :"22 Janurai 2023 14:40"
+                        createdAt :"22 Janurai 2023 14:40",
+                        author: "budi@gmail.com"
                     }
                 ]
             }
+        })
+    }
+
+    static async delete(req, res){
+        res.json({
+            error: false,
+            message: "Data kejadian berhasil dihapus"
         })
     }
 }

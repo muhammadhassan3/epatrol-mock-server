@@ -78,7 +78,7 @@ class Patrol {
                 events:[
                     {
                         id: 0,
-                        image: "",
+                        image: "https://picsum.photos/200/300",
                         summary: "Sambang dengan warga sekitar untuk memastikan situasi dan kondisi aman",
                         title: "Suasana tertib",
                         action: "Dialog dengan warga",

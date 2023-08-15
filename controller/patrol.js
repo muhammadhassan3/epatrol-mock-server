@@ -98,6 +98,20 @@ class Patrol {
             message: "Data kejadian berhasil dihapus"
         })
     }
+
+    static async finish(req, res){
+        res.json({
+            error: false,
+            message: "Patroli sudah diselesaikan"
+        })
+    }
+
+    static async addEvent(req, res){
+        res.json({
+            error: false,
+            message: "Data kejadian sudah ditambahkan"
+        })
+    }
 }
 
 module.exports = Patrol

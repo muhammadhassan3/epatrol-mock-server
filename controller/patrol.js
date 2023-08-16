@@ -66,7 +66,7 @@ class Patrol {
             error: false,
             message: "Data berhasil dimuat",
             data: {
-                status: "sudah-dikerjakan",
+                status: "belum-dikerjakan",
                 alamat: "Jl Diponegoro 1",
                 tanggal: "22 Juni 2023",
                 jam: "22:24",

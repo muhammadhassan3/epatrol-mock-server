@@ -8,7 +8,9 @@ class User {
                 user: {
                     nama_lengkap: "Budi santoro",
                     email: "budi@gmail.com",
-                    nrp: "0543536543216"
+                    nrp: "0543536543216",
+                    profile: "https://picsum.photos/200/200",
+                    jabatan: "Banit Turjawali Satsamapta Polresta Cilacap"
                 }
             },
             message: "Data berhasil dimuat"
